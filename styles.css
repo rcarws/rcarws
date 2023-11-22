@@ -1,0 +1,30 @@
+/*styles.css*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000;
+    color: #ffffff ;
+margin:1;
+text-align: center; /* Centra el texto horizontalmente */
+display: flex;
+flex-direction: column;
+align-items: center; /* Centra los elementos verticalmente */
+
+}
+
+h1 {color:  rgb(227, 3, 167);}
+h2 {color: hsl(0, 0%, 98%);}
+h4 {color: #fdfafa;}
+
+
+
+h1, h3, h4, h5 {
+margin: 1 ; /* Añade un espacio arriba y abajo a los encabezados */
+}
+
+#respuestaImagen {
+width: 100%;
+max-width: 500px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-top: 20px; 
+}
