@@ -22,17 +22,23 @@ margin: 1 ; /* Añade un espacio arriba y abajo a los encabezados */
 }
 
 .contenedor-imagen {
-width: 100%;
-max-width: 500px;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-margin-top: 20px; 
-overflow: hidden;
-display: flex;
-gap: 10;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    gap: 5px;
+
+justify-content: center; /* Centra los elementos horizontalmente */
+align-items: center; /* Centra los elementos verticalmente */
 }
 
-.contenedor-imagenes img:nth-child(2) {
-    width: 50px; /* Ajusta el ancho de la segunda imagen según tu preferencia */
-    height: auto;
+/* Ajustado el estilo de las imágenes y videos para que tengan el mismo ancho */
+.contenedor-imagen img,
+.contenedor-imagen video {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    max-width: 200px; /* Ajusta este valor según tus preferencias */
+    height: auto; /* Mantiene la proporción original de la imagen o video */
 }
