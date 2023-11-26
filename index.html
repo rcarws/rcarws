@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mivida mi vida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,13 +12,32 @@
     <h3>HOLA MI VIDA HERMOSA, para innovar te hare una carta virtual, quiero decirte que me <br>encuentro muy feliz de estar contigo te agradezco mucho que seas mi novia, gracias por  <br>apoyarme te amo mucho mi cielito lindo, besitos mi farito de luz. </h3>
    
     <div class=".contenedor-imagen">
-        <img src="fotitos/minovia.jpg" alt="Minovia">
-        <video width="600" height="auto" controls>
-            <source src="fotitos/WhatsApp Video 2023-11-21 at 5.56.32 PM.mp4" type="video/mp4">
-            
-        </video>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <video class="d-block w-100"controls> <source src="fotitos/WhatsApp Video 2023-11-21 at 5.56.32 PM.mp4" type="video/mp4"></video>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="fotitos/minovia.jpg" class="d-block w-100" alt="minovia">
+          </div>
+          <div class="carousel-item">
+            <video class="d-block w-100"controls> <source src="fotitos/WhatsApp Video 2023-11-25 at 7.41.44 PM.mp4" type="video/mp4"></video>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     </div>
     <h4>te amo mi hani preciosa</h4>
     <h5>te amo, de parte de tu amorchi</h5>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
